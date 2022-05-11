@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
-  courses: Observable<Course[]>;
+  courses$: Observable<Course[]>;
   //coursesService: CoursesService;
   displayedColumns = ['name', 'category'];
 
@@ -18,7 +18,7 @@ export class CoursesComponent implements OnInit {
     //this.coursesService = new CoursesService();
     //this.coursesService.list().subscribe(courses => this.courses = courses) para retornar cursos ao invés de um observable
     //  | assync faz a mesma coisa que o subscribe
-    this.courses = this.coursesService.list();
+    this.courses$ = this.coursesService.list();
 
   }
 
