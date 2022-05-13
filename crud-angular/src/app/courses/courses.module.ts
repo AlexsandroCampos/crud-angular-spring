@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 import { AppMaterialModule } from './../shared/app-material/app-material.module';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
+import { CourseFormComponent } from './course-form/course-form.component';
 
 // o módulo é como organizamos de forma lógica a aplicação
 @NgModule({
   declarations: [
-    CoursesComponent
+    CoursesComponent,
+    CourseFormComponent
   ],
   imports: [
     CommonModule,
